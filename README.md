@@ -5,12 +5,12 @@ A Python CLI program that analyzes novels and prints a statistical report of the
 # Usage 
 Run the script with the plain text file path 
 
-'''bash
+
 python3 books.py path/to/book.txt
-'''
+
 
 Example:
-'''bash
+
 python3 books.py books/mobydick.txt
 
 # Expected output
