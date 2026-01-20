@@ -7,11 +7,19 @@ def get_book_text(path):
    with open(path, encoding = "utf-8") as f:
     return f.read()
 
+import sys 
 def main():
     print("========BOOKBOT========")
-    book_path = "books/frankestein.txt"
+    
+    length = len(sys.argv)
+    if length != 2:
+        print("Usage: python3 books.py <path_to_book>")
+        sys.exit(1)
+    book_path = sys.argv[1]
+    print(f"book path: {book_path}")
     text = get_book_text(book_path)
     print(f"Analyzing book found at {book_path}....")
+   
 
     
     print("--------Word Count---------")
